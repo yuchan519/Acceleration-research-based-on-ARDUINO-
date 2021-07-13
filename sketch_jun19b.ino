@@ -1,4 +1,4 @@
-#define NUM_MEASUREMENTS  20
+#define NUM_MEASUREMENTS  6
 #define PIN_INTERRUPT 2
 
 int times[NUM_MEASUREMENTS];//
@@ -17,6 +17,8 @@ void loop() {
   double tempTimesqure;
   if (i >= NUM_MEASUREMENTS){
       for(int j = 1; j < i ; j++){               
+          Serial.print(j);
+          Serial.print(" ");  
           tempTime = times[j] - times[j-1];                 
           Serial.print("The discontinuous time is:");
           Serial.print(tempTime);         
