@@ -14,7 +14,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   int tempTime;
-  double tempTimesqure;
   if (i >= NUM_MEASUREMENTS){
       for(int j = 1; j < i ; j++){               
           Serial.print(j);
